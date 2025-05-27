@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +81,23 @@
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(47, 153);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Thông Tin Bổ Sung";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 233);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label2);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label3;
     }
 }
